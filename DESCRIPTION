@@ -3,61 +3,44 @@ Type: Package
 Title: MR Spectroscopy Analysis Tools
 Version: 1.7.0
 Date: 2020-07-09
-Authors@R: c(
-    person("Martin", "Wilson", email = "martin@pipegrep.co.uk",
-           role = c("cre", "aut")),
-    person("Yong", "Wang", role = "ctb"),
-    person("John", "Muschelli", role = "ctb"))
-Description: Tools for reading, visualising and processing Magnetic Resonance
-    Spectroscopy data. <https://martin3141.github.io/spant/>.
+Authors@R: c( person("Martin", "Wilson", email =
+        "martin@pipegrep.co.uk", role = c("cre", "aut")),
+        person("Yong", "Wang", role = "ctb"), person("John",
+        "Muschelli", role = "ctb"))
+Description: Tools for reading, visualising and processing Magnetic
+        Resonance Spectroscopy data.
+        <https://martin3141.github.io/spant/>.
 BugReports: https://github.com/martin3141/spant/issues
 License: GPL-3
 RoxygenNote: 7.1.1
-Roxygen: list(markdown = TRUE, roclets = c("rd", "namespace", "collate"))
+Roxygen: list(markdown = TRUE, roclets = c("rd", "namespace",
+        "collate"))
 NeedsCompilation: yes
 LazyData: yes
-Depends:
-    R (>= 2.10)
-Imports:
-    abind,
-    plyr,
-    foreach,
-    pracma,
-    stringr,
-    complexplus,
-    signal,
-    matrixcalc,
-    minpack.lm,
-    nnls,
-    utils,
-    graphics,
-    grDevices,
-    smoother,
-    readr,
-    magrittr,
-    ptw,
-    viridisLite,
-    mmand,
-    RNifti,
-    RNiftyReg,
-    fields,
-    MASS,
-    shiny,
-    miniUI,
-    oro.dicom,
-    numDeriv,
-    nloptr,
-    irlba,
-    tibble,
-    jsonlite
-Suggests:
+Depends: R (>= 2.10)
+Imports: abind, plyr, foreach, pracma, stringr, complexplus, signal,
+        matrixcalc, minpack.lm, nnls, utils, graphics, grDevices,
+        smoother, readr, magrittr, ptw, viridisLite, mmand, RNifti,
+        RNiftyReg, fields, MASS, shiny, miniUI, oro.dicom, numDeriv,
+        nloptr, irlba, tibble, jsonlite
+Suggests: 
     neurobase,
     oro.nifti,
     knitr,
     rmarkdown,
     testthat,
-    doParallel
-VignetteBuilder:
-    knitr
+    doParallel,
+    covr
+VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-GB
+Additional_repositories: https://neuroconductor.org/releases/2020/10/
+Repository: Neuroconductor-Releases
+Remotes: 
+    neuroconductor-releases/RNifti@e8e06065bc0fe8730f28d945d7c70cb8d7042a56,
+    neuroconductor-releases/mmand@ed8ee8481596b7d5684812f48c1d85a21e98fc5e,
+    neuroconductor-releases/RNiftyReg@d37bbfda368b3e47f9d36f5cdb638e895f19c435,
+    neuroconductor-releases/oro.nifti@e68f8fa7e00dc917a459b9ebd529ac23924904d2,
+    neuroconductor-releases/oro.dicom@39897677c2c12ef247fefc9640561445ddfd0251,
+    neuroconductor-releases/neurobase@30073c8d9f39c1e114af0a004fc0d4f8f5832bc0
+biocViews: 
